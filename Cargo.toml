@@ -20,10 +20,10 @@ thiserror = "1"
 
 [target.'cfg(target_vendor = "espressif")'.dependencies]
 esp-idf-sys = { version = ">=0.33", features = ["binstart"] }
-esp-idf-hal = "0.42"
+esp-idf-hal = "0.43.1"
 
 [dev-dependencies]
-smart-leds = "0.3"
+smart-leds = "0.4"
 embedded-graphics = "0.8"
 
 [build-dependencies]
@@ -34,7 +34,7 @@ strip = true
 opt-level = "s"
 
 [profile.dev]
-debug = true # Symbols are nice and they don't increase the size on Flash
+debug = true    # Symbols are nice and they don't increase the size on Flash
 strip = true
 opt-level = "z"
 
